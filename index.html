@@ -2,21 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Help Me Bring My Family Back Together</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- Social Preview (OG/Twitter) -->
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Help Me Bring My Family Back Together">
-  <meta property="og:description" content="A personal story about family, separation, and starting again.">
-  <meta property="og:image" content="https://i.ibb.co/hRrp78ZZ/pa.jpg">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Help Me Bring My Family Back Together">
-  <meta name="twitter:description" content="A personal story about family, separation, and starting again.">
-  <meta name="twitter:image" content="https://i.ibb.co/hRrp78ZZ/pa.jpg">
 
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 
@@ -28,19 +14,11 @@
       color: #fff;
     }
 
-    /* HEADER */
     .header {
       text-align: center;
       padding: 25px 15px 10px;
     }
 
-    .title {
-      font-size: 34px;
-      font-weight: 700;
-      margin-bottom: 18px;
-    }
-
-    /* DONATE BUTTON */
     .donate {
       margin: 20px 0;
       text-align: center;
@@ -76,8 +54,8 @@
       100% { transform: translateX(0); }
     }
 
-    /* IMAGE */
-    .image-container {
+    .image-container,
+    .video-container {
       max-width: 720px;
       margin: 0 auto;
     }
@@ -89,7 +67,21 @@
       cursor: pointer;
     }
 
-    /* FOOTER */
+    .video-title {
+      text-align: center;
+      font-size: 18px;
+      font-weight: 600;
+      padding: 25px 15px 10px;
+      line-height: 1.4;
+    }
+
+    video {
+      width: 100%;
+      height: auto;
+      display: block;
+      background: #000;
+    }
+
     .footer {
       text-align: center;
       padding: 30px 15px 40px;
@@ -99,10 +91,7 @@
 
 <body>
 
-  <!-- TOP -->
   <div class="header">
-    <div class="title">Help Me Bring My Family Back Together</div>
-
     <div class="donate">
       <a href="https://gofund.me/3752273aa" target="_blank">
         DONATE & SEE MORE DETAILS
@@ -111,14 +100,30 @@
     </div>
   </div>
 
-  <!-- IMAGE CLICKABLE -->
   <div class="image-container">
     <a href="https://gofund.me/3752273aa" target="_blank">
-      <img src="pp.png" alt="Family Story Image">
+      <img src="pp.png" alt="">
     </a>
   </div>
 
-  <!-- BOTTOM DONATE -->
+  <!-- Text above video -->
+  <div class="video-title">
+    This is our reality — unseen, unheard, and ignored by the world.
+  </div>
+
+  <!-- Donate button above video -->
+  <div class="donate">
+    <a href="https://gofund.me/3752273aa" target="_blank">
+      DONATE & SEE MORE DETAILS
+      <span>➤➤➤</span>
+    </a>
+  </div>
+
+  <!-- Video -->
+  <div class="video-container">
+    <video src="clod.mp4" controls playsinline></video>
+  </div>
+
   <div class="footer">
     <div class="donate">
       <a href="https://gofund.me/3752273aa" target="_blank">
